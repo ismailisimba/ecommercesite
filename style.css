@@ -208,6 +208,7 @@ margin: 0px 0px;
 padding: 6px 0px;
 background-color: transparent;
 min-height: 0px;
+position: relative;
 height: auto;
 }
 
@@ -222,6 +223,7 @@ padding: 6px 0px;
 width: 104%;
 margin-left: -2%;
 background-color: #fff;
+position: relative;
 min-height: 0px;
 height: auto;
 overflow-y: hidden;
@@ -504,7 +506,7 @@ font-weight: bold;
 }
 
 
-.genericmotherbox:nth-child(7) {
+.genericmotherbox:nth-child(7), #lastgenmom {
     width: 104%;
     position: relative;
     padding-bottom: 36px;
@@ -517,7 +519,7 @@ font-weight: bold;
 
     #social-footer{
         position: absolute;
-        top: 28px;
+        top: 0px;
         right: 6%;
         display: flex;
         flex-flow: row;
@@ -525,6 +527,10 @@ font-weight: bold;
         justify-content: flex-start;
         align-items: flex-end;
         margin-bottom: 3px;
+    }
+
+    #social-footer a{
+        position: relative !important;
     }
     
     .social-icon {
@@ -610,4 +616,10 @@ margin-left: 18px;
 margin-right: 18px;
 }
 
+
+
+
+.bigitemsbox{
+    min-height: 469px;
+}
 
