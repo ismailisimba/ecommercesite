@@ -620,6 +620,50 @@ margin-right: 18px;
 
 
 .bigitemsbox{
+    position: relative;
+    width: 104%;
+    left: -2%;
     min-height: 469px;
 }
+
+.bigitemsbox nav {
+    position: relative;
+    width: 88%;
+    left: 6%;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bigitemsbox .bignav {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bigitemsbox .bignav div{
+  margin-top: 12px;
+}
+
+.bigitemsbox .bignav div:last-child{
+    margin-left: 18px;
+  }
+
+
+.bigitemsbox .bignav div:first-child{
+    position: absolute;
+    left: 0px;
+    font-size: 18px;
+
+}
+
+
+
 
