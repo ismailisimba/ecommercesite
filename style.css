@@ -302,7 +302,7 @@ margin-left: 6px;
 margin-right: 12px;
 }
 
-.genericmotherbox:nth-child(4){
+.genericmotherbox:nth-child(4), #lastgenmom{
 margin: 0px 0px;
 padding: 6px 0px;
 width: 104%;
@@ -326,7 +326,7 @@ left: 6%;
 z-index: 500;
 }
 
-.genericmotherbox:nth-child(4) a{
+.genericmotherbox:nth-child(4) a, #lastgenmom a{
 position: absolute;
 margin-top: 6px;
 top: 30px;
@@ -507,11 +507,11 @@ font-weight: bold;
 
 
 .genericmotherbox:nth-child(7), #lastgenmom {
-    width: 104%;
+    width: 108%;
     position: relative;
     padding-bottom: 36px;
     box-sizing: border-box;
-    left: -2%;
+    left: -4%;
     background-color: #fff;
     min-height: 300px;
     
@@ -621,20 +621,33 @@ margin-right: 18px;
 
 .bigitemsbox{
     position: relative;
+    background-color: white;
     width: 104%;
     left: -2%;
     min-height: 469px;
+    padding-top: 72px;
+
+    transition: all 1s ease-out;
+
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    box-sizing: border-box;
 }
 
 .bigitemsbox nav {
-    position: relative;
+    position: absolute;
     width: 88%;
     left: 6%;
+    top:24px;
     display: flex;
     flex-flow: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+    z-index: 100;
 }
 
 .bigitemsbox .bignav {
@@ -662,6 +675,119 @@ margin-right: 18px;
     left: 0px;
     font-size: 18px;
 
+}
+
+.myitems{
+    width: 100%;
+    background-color: transparent;
+    height: auto;
+    min-height: 169px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 1s ease-out;
+
+    box-sizing: border-box;
+}
+
+.itemtemplate {
+    width: 33%;
+    box-sizing: border-box;
+    position: relative;
+
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    text-align: left;
+}
+
+.itemtemplate h4{
+    width: 94%;
+    font-size: 16px;
+    letter-spacing: 1.69px;
+    font-weight: bold;
+    color:#323e48 ;
+    box-sizing: border-box;
+    margin-block-start: 12px;
+    margin-block-end: 0px;
+}
+
+.itemtemplate h3, .itemtemplate p{
+    width: 94%;
+    font-size: 16px;
+    letter-spacing: 1.69px;
+    font-weight: bold;
+    color:#a2a9ad ;
+    box-sizing: border-box;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.itemtemplate .morepics{
+    display: none;
+    width: 94%;
+    font-size: 16px;
+    letter-spacing: 1.69px;
+    font-weight: bold;
+    color:#a2a9ad ;
+    box-sizing: border-box;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.itemtemplate .price{
+    margin-block-start: 12px;
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+}
+
+
+.myfilters{
+    display: none;
+    background-color: transparent;
+    width:320px;
+    min-height: 169px;
+    margin-top: 24px;
+    box-sizing: border-box;
+
+
+    transition: all 1s ease-out;
+}
+
+
+
+
+.myfilters ul, .myfilters ol{
+    width: 75%;
+}
+
+.myfilters ul {
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.myfilters .simplelist{
+    
+    box-sizing: border-box;
+}
+.myfilters .simplelist li{
+    font-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    box-sizing: border-box;
 }
 
 
